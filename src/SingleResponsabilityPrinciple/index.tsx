@@ -1,13 +1,13 @@
-import { useFetchTodo } from './hooks/useFetchTodo';
+import { useFetchTodos } from './hooks/useFetchTodos';
 
 const TodoList = () => {
-  const { todo, isFetching } = useFetchTodo();
+  const { todos, isFetching } = useFetchTodos();
 
   if (isFetching) return <p>... loading</p>;
 
   return (
     <ul>
-      {todo.map((todo) => {
+      {todos.map((todo) => {
         return (
           <li key={todo.id}>
             <span>{todo.id}</span>
