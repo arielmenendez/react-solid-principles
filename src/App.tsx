@@ -1,7 +1,8 @@
 // import OpenClosedPrinciple from './OpenClosedPrinciple/index';
-import { Button, RedButton } from './LiskovSubstitutionPrinciple/index';
+// import { Button, RedButton } from './LiskovSubstitutionPrinciple/index';
 // import { TitleWithButton } from './OpenClosedPrinciple/index';
 // import SingleResponsabilityPrinciple from './SingleResponsabilityPrinciple/index';
+import Post from './InterfaceSegregationPrinciple/index';
 
 function App() {
   return (
@@ -18,12 +19,22 @@ function App() {
         buttonText="Aloha"
         onClick={() => {}}
       /> */}
-      <Button size="xl" color="green">
+      {/* <Button size="xl" color="green">
         <span>Hi</span>
       </Button>
       <RedButton size="xl" color="red">
         <span>Hi</span>
-      </RedButton>
+      </RedButton> */}
+      <Post
+        post={{
+          title: 'Example Post',
+          author: {
+            name: 'Ariel',
+            age: 33,
+          },
+          createdAt: new Date(),
+        }}
+      />
     </>
   );
 }
