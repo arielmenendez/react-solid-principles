@@ -1,5 +1,6 @@
 // import OpenClosedPrinciple from './OpenClosedPrinciple/index';
-import { TitleWithButton } from './OpenClosedPrinciple/index';
+import { Button, RedButton } from './LiskovSubstitutionPrinciple/index';
+// import { TitleWithButton } from './OpenClosedPrinciple/index';
 // import SingleResponsabilityPrinciple from './SingleResponsabilityPrinciple/index';
 
 function App() {
@@ -12,11 +13,17 @@ function App() {
         buttonText="Aloha"
         href="/"
       /> */}
-      <TitleWithButton
+      {/* <TitleWithButton
         title="Principios Solid React"
         buttonText="Aloha"
         onClick={() => {}}
-      />
+      /> */}
+      <Button size="xl" color="green">
+        <span>Hi</span>
+      </Button>
+      <RedButton size="xl" color="red">
+        <span>Hi</span>
+      </RedButton>
     </>
   );
 }
