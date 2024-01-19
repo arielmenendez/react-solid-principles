@@ -2,7 +2,8 @@
 // import { Button, RedButton } from './LiskovSubstitutionPrinciple/index';
 // import { TitleWithButton } from './OpenClosedPrinciple/index';
 // import SingleResponsabilityPrinciple from './SingleResponsabilityPrinciple/index';
-import Post from './InterfaceSegregationPrinciple/index';
+// import Post from './InterfaceSegregationPrinciple/index';
+import DependencyInversionPrinciple from './DependencyInversionPrinciple/index';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <RedButton size="xl" color="red">
         <span>Hi</span>
       </RedButton> */}
-      <Post
+      {/* <Post
         post={{
           title: 'Example Post',
           author: {
@@ -34,7 +35,8 @@ function App() {
           },
           createdAt: new Date(),
         }}
-      />
+      /> */}
+      <DependencyInversionPrinciple />
     </>
   );
 }
